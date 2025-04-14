@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+
+Route::get('/create', [ProductController::class, 'create'])->name('products.create');
+Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+Route::get('/{id}', [ProductController::class, 'show'])->name('products.show');
+Route::get('/products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit'); // 編集画面表示
+Route::post('/products/{id}/update', [ProductController::class, 'update'])->name('products.update'); // 商品情報更新
+Route::delete('/products/{id}/delete', [ProductController::class, 'destroy'])->name('products.destroy'); // 商品削除

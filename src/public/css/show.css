@@ -1,0 +1,82 @@
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.form-group-required {
+    color: #FFFFFF;
+    background-color: #f00000;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.form-group-instruction {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.form-input-text,
+.form-input-file,
+.form-textarea {
+    width: 760px;
+    padding: 43px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-textarea {
+    height: 120px;
+    resize: none;
+}
+.form-radio-group {
+    display: flex;
+    gap: 10px;
+}
+.form-radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.form-radio-input {
+    margin-right: 5px;
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.form-button-back {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-button-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-button-back:hover,
+.form-button-submit:hover {
+    opacity: 0.8;
+}
